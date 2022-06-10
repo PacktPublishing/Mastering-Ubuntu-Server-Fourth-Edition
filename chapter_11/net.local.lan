@@ -1,0 +1,17 @@
+$TTL 1D
+@ IN SOA local.lan. hostmaster.local.lan. (
+
+202208161; serial
+
+8H ; refresh
+4H ; retry
+4W ; expire
+1D ) ; minimum
+IN A 192.168.1.1
+;
+@ IN NS hermes.local.lan.
+fileserv        IN  A       192.168.1.3
+hermes          IN  A       192.168.1.1
+mailserv        IN  A       192.168.1.5
+mail            IN  CNAME   mailserv.
+web01           IN  A       192.168.1.7

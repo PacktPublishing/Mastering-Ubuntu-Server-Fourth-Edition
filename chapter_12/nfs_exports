@@ -1,0 +1,4 @@
+/exports *(ro,fsid=0,no_subtree_check) 
+/exports/backup 172.16.250.0/255.255.255.0(rw,no_subtree_check) 
+/exports/documents 172.16.250.0/255.255.255.0(ro,no_subtree_check) 
+/exports/public 172.16.250.0/255.255.255.0(rw,no_subtree_check)

@@ -1,0 +1,4 @@
+#!/bin/bash
+apt update
+apt dist-upgrade -y
+apt install -y apache2

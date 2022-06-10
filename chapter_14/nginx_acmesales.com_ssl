@@ -1,0 +1,15 @@
+server { 
+        listen 443 ssl; 
+        listen [::]:443 ssl; 
+
+        root /var/www/html; 
+        index index.html index.htm index.nginx-debian.html; 
+
+        server_name acmesales.com www.acmesales.com; 
+        ssl_certificate /etc/certs/cert.pem; 
+        ssl_certificate_key /etc/certs/cert.key; 
+        ssl_session_timeout 5m;
+        location / { 
+                try_files $uri $uri/ =404; 
+        } 
+}

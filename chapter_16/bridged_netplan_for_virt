@@ -1,0 +1,11 @@
+network:
+  ethernets:
+    enp0s3:
+      dhcp4: false
+  bridges: 
+    br0: 
+      interfaces: [enp0s3] 
+      dhcp4: true 
+      parameters: 
+        stp: false 
+        forward-delay: 0

@@ -1,0 +1,4 @@
+[mysql]
+
+[mysqld]
+server-id=2

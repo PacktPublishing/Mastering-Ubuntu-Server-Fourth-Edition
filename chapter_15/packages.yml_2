@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: Install packages
+    ansible.builtin.apt:
+      name:
+        - git 
+        - htop
+        - vim-nox

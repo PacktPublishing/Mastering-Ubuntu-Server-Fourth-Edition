@@ -1,0 +1,6 @@
+[mysql]
+
+[mysqld]
+log-bin 
+binlog-do-db=mysampledb 
+server-id=1
